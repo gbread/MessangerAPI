@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessengerAPI", "MessangerAPI\MessengerAPI.csproj", "{597EC227-C3EA-4791-B5E8-937D6F22DEEF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessengerAPITests", "MessengerAPITests\MessengerAPITests.csproj", "{017C6047-D4FB-49AF-BD81-81ECE2E28CCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{597EC227-C3EA-4791-B5E8-937D6F22DEEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{597EC227-C3EA-4791-B5E8-937D6F22DEEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{597EC227-C3EA-4791-B5E8-937D6F22DEEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{597EC227-C3EA-4791-B5E8-937D6F22DEEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{017C6047-D4FB-49AF-BD81-81ECE2E28CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{017C6047-D4FB-49AF-BD81-81ECE2E28CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{017C6047-D4FB-49AF-BD81-81ECE2E28CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{017C6047-D4FB-49AF-BD81-81ECE2E28CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7D9B134-91EE-4C9E-ABFA-7E446E31922C}
+	EndGlobalSection
+EndGlobal

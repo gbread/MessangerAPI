@@ -1,5 +1,6 @@
 using MessengerAPI;
 using Twilio;
+using Twilio.Exceptions;
 using Twilio.Rest.Api.V2010.Account;
 
 namespace MessengerAPITests
@@ -30,5 +31,25 @@ namespace MessengerAPITests
             
             Console.WriteLine(messageResource.Status);
         }
+
+        [Test]
+        public void TwilioFailedWrongFromNumberSMS() {
+            SMSSendParams smsParams = new("No from Number", Credentials.TwilioPhoneNumberTo, "Testing message");
+            Assert.Throws<ApiException>(() => { gateway.Send(smsParams); });
+        }
+
+        [Test]
+        public void TwilioFailedUnauthorizedFromNumberSMS()
+        {
+            SMSSendParams smsParams = new("+420123456", Credentials.TwilioPhoneNumberTo, "Testing message");
+            Assert.Throws<ApiException>(() => { gateway.Send(smsParams); });
+        }
+        [Test]
+        public void TwilioFailedWrongToPhoneNumberSMS()
+        {
+            SMSSendParams smsParams = new(Credentials.TwilioPhoneNumberFrom, "NaN", "Testing message");
+            Assert.Throws<ApiException>(() => { gateway.Send(smsParams); });
+        }
+
     }
 }
